@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <title>Scan Me Now | Ngopibareng</title>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-cover bg-no-repeat bg-center" style="background-image: url('../assets/img/background.png')">
+    <div class="h-screen w-full bg-zinc-900/80">
+        <div class="h-screen flex items-center justify-center">
+            <div class="bg-white/40 px-[10px] pt-[18px] pb-[10px] rounded-2xl md:hidden text-center">
+                <img class="mx-auto" width="180" src="../assets/img/logo-green.png" alt="Ngopibareng Logo"/>
+                <div class="bg-white h-[330px] w-[330px] mt-[18px] mb-[10px] p-2 rounded-xl">
+                    <div class="bg-[#184F38] text-white w-full h-full rounded-lg flex items-center justify-center">
+                        ini camera
+                    </div>
+                </div>
+                <div class="flex gap-[10px]">
+                    <button type="submit" class="bg-[#184F38] w-[160px] h-[50px] rounded-xl">
+                        <div class="text-xs text-white font-bold flex items-center justify-center gap-2">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 5h-1.382l-.171-.342A2.985 2.985 0 0 0 14.764 3H9.236a2.984 2.984 0 0 0-2.683 1.658L6.382 5H5a3 3 0 0 0-3 3v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a3 3 0 0 0-3-3Zm-3.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/>
+                            </svg>
+                            <span>Camera</span>
+                        </div>
+                    </button>
+                    <button type="submit" class="bg-white w-[160px] h-[50px] rounded-xl">
+                        <div class="text-xs text-[#184F38] font-bold flex items-center justify-center gap-2">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 20">
+                                <path d="M9.092 18h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-2-18a7.009 7.009 0 0 0-7 7 7.8 7.8 0 0 0 2.219 5.123c.956 1.195 1.781 2.228 1.781 3.877a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1c0-1.7.822-2.7 1.774-3.868A7.63 7.63 0 0 0 14.092 7a7.009 7.009 0 0 0-7-7Zm0 5a2 2 0 0 0-2 2 1 1 0 0 1-2 0 4 4 0 0 1 4-4 1 1 0 0 1 0 2Z"/>
+                            </svg>
+                            <span>Flashlight OFF</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white/40 text-white p-4 max-sm:hidden sm:hidden md:block rounded-md text-center animate__animated animate__fadeInDown">
+            <img
+                class="mx-auto"
+                width="100"
+                height="100"
+                src="https://img.icons8.com/clouds/100/sad.png"
+                alt="sad"
+            />
+            <p>
+                <span class="font-bold text-lg">Mohon Maaf</span>
+                <br />
+                Website Ini Tidak Tersedia pada Perangkat Selain Mobile Phone
+            </p>
+            </div>
+            <p class="absolute bottom-10 text-white">version 1.0.0</p>
+        </div>
+    </div>
+
+    <!-- Flowbite JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>

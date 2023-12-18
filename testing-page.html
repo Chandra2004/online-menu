@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  margin: 10px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-btn, .minus-btn {
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card" id="product1">
+        <img src="assets/img/coffe.png" alt="Produk 1">
+        <h3>Nama Produk 1</h3>
+        <p>Harga: $10</p>
+        <div class="quantity">
+          <button class="minus-btn" onclick="decreaseValue('product1')">-</button>
+          <input type="text" id="quantity-product1" value="0">
+          <button class="plus-btn" onclick="increaseValue('product1')">+</button>
+        </div>
+    </div>
+    <div class="card" id="product2">
+        <img src="assets/img/coffe.png" alt="Produk 2">
+        <h3>Nama Produk 1</h3>
+        <p>Harga: $10</p>
+        <div class="quantity">
+          <button class="minus-btn" onclick="decreaseValue('product2')">-</button>
+          <input type="text" id="quantity-product2" value="0" disabled>
+          <button class="plus-btn" onclick="increaseValue('product2')">+</button>
+        </div>
+    </div>
+
+    <script>
+        function increaseValue(productId) {
+            var quantityElement = document.getElementById('quantity-' + productId);
+            var quantity = parseInt(quantityElement.value, 10);
+            quantity = isNaN(quantity) ? 0 : quantity;
+            quantity++;
+            quantityElement.value = quantity;
+        }
+
+        function decreaseValue(productId) {
+            var quantityElement = document.getElementById('quantity-' + productId);
+            var quantity = parseInt(quantityElement.value, 10);
+            quantity = isNaN(quantity) ? 0 : quantity;
+            if (quantity > 0) {
+                quantity--;
+                quantityElement.value = quantity;
+            }
+        }
+    </script>
+</body>
+</html>
